@@ -1,6 +1,6 @@
 # Driver Image Capture
 
-This project was generated with [Blazor](https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor) and [ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-6.0). The purpose of this project is for demonstrating ability of organizing project sutructure, reusable code and implement of the PWA using Blazor and ASP.NET Core.
+This project was generated with [Blazor](https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor) and [ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-6.0). The purpose of this project is for demonstrating ability of organizing project structure, reusable code and implementing of the PWA using Blazor and ASP.NET Core.
 
 ## Requirement
 1. Capture and JPEG image from mobile camera and convert it into pdf.
