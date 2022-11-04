@@ -9,7 +9,7 @@ This project was generated with [Blazor](https://dotnet.microsoft.com/en-us/apps
 ## Environment
 * .Net 6.0
 
-Run `dotnet run` in Server directory to run project. Navigate to `https://localhost:7268`. When capture and save the image, the files of PDF and JPEG format are saved in `upload` folder in Server directory.
+Run `dotnet run` in Server directory to run project. Navigate to `https://localhost:7027`. When capture and save the image, the files of PDF and JPEG format are saved in `upload` folder in Server directory.
 
 ## Short Description
 This project connected cameras using the `MediaDevices` interface of the `Window.Navigator` object and saved captured image as PDF and JPEG format on the server using `IronPdf` library.
