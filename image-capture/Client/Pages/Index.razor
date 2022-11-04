@@ -1,9 +1,15 @@
 ﻿@page "/"
+@inject HttpClient Http
+@inject IJSRuntime JS
 
 <PageTitle>Index</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1>Blazor Webcam</h1>
+<video id="videoCam" width="320" height="240" />
 
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?" />
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await JS.InvokeVoidAsync("startVideo", "videoCam");
+    }
+}

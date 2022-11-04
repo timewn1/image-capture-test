@@ -1,12 +1,12 @@
 # Debug
-/blazor test app/Client/bin
-/blazor test app/Client/obj
+/image-capture/Client/bin
+/image-capture/Client/obj
 
-/blazor test app/Server/bin
-/blazor test app/Server/obj
+/image-capture/Server/bin
+/image-capture/Server/obj
 
-/blazor test app/Shared/bin
-/blazor test app/Shared/obj
+/image-capture/Shared/bin
+/image-capture/Shared/obj
 
 ###
 /.vs
