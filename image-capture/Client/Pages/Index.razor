@@ -2,14 +2,30 @@
 @inject HttpClient Http
 @inject IJSRuntime JS
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Blazor</PageTitle>
 
 <h1>Blazor Webcam</h1>
 <video id="videoCam" width="320" height="240" />
+<canvas style="display: none" id="currentFrame" width="320" height="240" />
+<br />
+<button class="btn btn-primary my-2" @onclick="CaptureFrame">Capture Frame</button>
 
 @code {
+    private string imageString;
+
     protected override async Task OnInitializedAsync()
     {
         await JS.InvokeVoidAsync("startVideo", "videoCam");
+    }
+
+    private async Task CaptureFrame()
+    {
+        await JS.InvokeAsync<String>("getFrame", "videoCam", "currentFrame", DotNetObjectReference.Create(this));
+    }
+
+    [JSInvokable]
+    public void ProcessImage(string image)
+    {
+        this.imageString = image;
     }
 }

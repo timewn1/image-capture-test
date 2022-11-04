@@ -15,3 +15,14 @@
         });
     }
 }
+
+function getFrame(src, dest, dotNetHelper) {
+    let video = document.getElementById(src);
+    let canvas = document.getElementById(dest);
+    canvas.getContext('2d').drawImage(video, 0, 0, 320, 240);
+
+    let dataUrl = canvas.toDataURL("image/jpeg");
+    canvas.style.display = 'block';
+
+    dotNetHelper.invokeMethodAsync('ProcessImage', dataUrl);
+}
