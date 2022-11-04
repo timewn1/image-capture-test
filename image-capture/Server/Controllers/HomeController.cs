@@ -1,8 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using IronPdf;
-using System.IO;
-using System.Linq;
-using System.Reflection.Metadata;
 
 namespace blazor_test_app.Server.Controllers
 {
